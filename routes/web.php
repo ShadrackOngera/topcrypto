@@ -14,3 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\PageController::class, 'showHomePage'])->name('home');
+Route::get('/about', [App\Http\Controllers\PageController::class, 'showAboutPage'])->name('about');
+
+
+//contact
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'showContactPage'])->name('contact');
+Route::post('/store', [App\Http\Controllers\ContactController::class, 'store'])->name('message.store');

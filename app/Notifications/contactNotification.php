@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use NotificationChannels\Telegram\TelegramMessage;
 
 class contactNotification extends Notification
 {
@@ -16,9 +17,9 @@ class contactNotification extends Notification
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($message)
     {
-        //
+        $this->message = $message;
     }
 
     /**
@@ -29,21 +30,20 @@ class contactNotification extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        return ['telegram'];
     }
 
-    /**
-     * Get the mail representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return \Illuminate\Notifications\Messages\MailMessage
-     */
-    public function toMail($notifiable)
+    public function toTelegram($notifiable)
     {
-        return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+        $message = 'new' . "\n\n";
+        $message .= 'Name: ```' . $this->message->firstName . "```\n";
+        $message .= 'Name: ```' . $this->message->lastName . "```\n";
+        $message .= 'Email: ```' . $this->message->email . "```\n\n";
+        $message .= 'Description: ```' . $this->message->description . "```\n";
+
+        return TelegramMessage::create()
+            ->to('-741098620')
+            ->content("UP \n\n" . $message);
     }
 
     /**
