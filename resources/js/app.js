@@ -15,8 +15,12 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+import ContactFormComponent from './components/ContactFormComponent.vue';
+app.component('contact-form-component', ContactFormComponent);
+
+
+
+// Vue.component('contact-form', require('./components/contactForm.vue').default);
 
 /**
  * The following block of code may be used to automatically register your
