@@ -4,11 +4,37 @@
   background-image: url(/images/home-bg.jpg?6ce0bab6705e23e540f2cdb3288f1401);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.banner-footer {
+  background-image: url(/images/footer.jpg?7722da7013d8791001ab3b68660aadf3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.subscribe-form {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #0167af;
+}
+
+.subscribe-btn {
+  border: 0;
+  border-bottom: 2px solid #0167af;
+}
+
+.card-gradient {
+  color: #fdfafa;
+  background-image: linear-gradient(to right, #2ea9b1, #0167af);
 }
 
 /*!
