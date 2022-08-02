@@ -5,7 +5,7 @@
                 <div class="card-body text-center">
                     <h2 class="display-5 fw-bold">Grow With US</h2>
                     <p class="h5">
-                        Use This website to see which crypto- currencies to invest in at anytime
+                        Use This website to see which crypto-Currencies to invest in at anytime to save you mone
                     </p>
                 </div>
             </div>
