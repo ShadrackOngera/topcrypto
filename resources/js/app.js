@@ -16,7 +16,13 @@ import { createApp } from 'vue';
 const app = createApp({});
 
 import ContactFormComponent from './components/ContactFormComponent.vue';
+import CryptoListsComponent from './components/CryptoListsComponent.vue';
+
+
+
+
 app.component('contact-form-component', ContactFormComponent);
+app.component('crypto-lists-component', CryptoListsComponent);
 
 
 
