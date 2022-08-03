@@ -36,8 +36,8 @@ class contactNotification extends Notification
     public function toTelegram($notifiable)
     {
         $message = 'new' . "\n\n";
-        $message .= 'Name: ```' . $this->message->firstName . "```\n";
-        $message .= 'Name: ```' . $this->message->lastName . "```\n";
+        $message .= 'First Name: ```' . $this->message->firstName . "```\n";
+        $message .= 'Last Name: ```' . $this->message->lastName . "```\n";
         $message .= 'Email: ```' . $this->message->email . "```\n\n";
         $message .= 'Description: ```' . $this->message->description . "```\n";
 
