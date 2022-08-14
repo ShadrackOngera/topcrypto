@@ -26,7 +26,32 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5"></div>
+            <div class="col-sm-5">
+                <div class="row">
+                    <div class="col-sm-6 text-white">
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-3 h4">
+                                Get in Touch
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">Facebook</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">Twitter</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">Instagram</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">Github</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <hr class="text-white">
         <p class="text-white d-flex justify-content-between">
