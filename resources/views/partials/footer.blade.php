@@ -28,24 +28,24 @@
             </div>
             <div class="col-sm-5">
                 <div class="row">
-                    <div class="col-sm-6 text-white">
-                        <ul class="navbar-nav">
-                            <li class="nav-item me-3 h4">
+                    <div class="col-sm-6">
+                        <ul class="navbar-nav text-white ms-5">
+                            <li class="nav-item h4">
                                 Get in Touch
                             </li>
-                            <li class="nav-item me-3">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Facebook</a>
                             </li>
-                            <li class="nav-item me-3">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Twitter</a>
                             </li>
-                            <li class="nav-item me-3">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Instagram</a>
                             </li>
-                            <li class="nav-item me-3">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Github</a>
                             </li>
-                            <li class="nav-item me-3">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">LinkedIn</a>
                             </li>
                         </ul>
