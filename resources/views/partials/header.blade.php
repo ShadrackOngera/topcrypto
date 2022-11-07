@@ -24,7 +24,7 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ms-auto">
                 <a href="#" class="btn btn-outline-secondary nav-link">
-                    Get A Quote
+                    Refresh Page
                 </a>
             </ul>
         </div>

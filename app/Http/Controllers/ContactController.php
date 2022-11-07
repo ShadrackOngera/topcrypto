@@ -31,7 +31,7 @@ class ContactController extends Controller
         $message->description = $request->description;
         $message->save();
 
-        Notification::route('telegram', '5560228011')->notify(new \App\Notifications\contactNotification($message));
+        Notification::route('telegram', '5560228011')   ->notify(new \App\Notifications\contactNotification($message));
         return redirect('/contact');
     }
 }
